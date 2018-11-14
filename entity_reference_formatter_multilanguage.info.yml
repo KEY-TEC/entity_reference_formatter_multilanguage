@@ -1,4 +1,5 @@
-name: Entity Reference Formatter eXTended
+name: Entity Reference Formatter Multilanguage
+description: Renders only published entities in the current language.
 type: module
 core: 8.x
 dependecies:

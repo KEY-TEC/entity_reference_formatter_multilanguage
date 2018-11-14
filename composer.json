@@ -1,7 +1,7 @@
 {
   "name": "drupal/entity_reference_formatter_multilanguage",
   "type": "drupal-module",
-  "description": "Provides translation access.",
+  "description": "Renders only published entities in the current language",
   "license": "GPL-2.0+",
   "minimum-stability": "dev",
   "prefer-stable": true,
