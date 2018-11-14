@@ -1,0 +1,5 @@
+name: Entity Reference Formatter eXTended
+type: module
+core: 8.x
+dependecies:
+  - entity_reference
