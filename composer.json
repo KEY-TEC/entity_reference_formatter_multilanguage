@@ -13,14 +13,12 @@
   ],
   "require-dev": {
     "cweagans/composer-patches": "~1.0",
-    "drupal-composer/drupal-scaffold": "^2.2",
-    "drupal/config_installer": "1.3.0",
-    "drupal/console": "~1",
+    "drupal/core-composer-scaffold": "^9",
     "drush/drush": "*",
-    "webflo/drupal-core-require-dev": "^8.5",
-    "phpro/grumphp": "0.11.4",
     "peridot-php/leo": "^1.6",
-    "openeuropa/task-runner": "^0.4"
+    "openeuropa/task-runner": "^0.4",
+    "drupal/core": "^9",
+    "drupal/core-recommended": "^9"
   },
   "repositories": [
     {
@@ -57,6 +55,12 @@
       "build/modules/contrib/{$name}": ["type:drupal-module"],
       "build/profiles/contrib/{$name}": ["type:drupal-profile"],
       "build/themes/contrib/{$name}": ["type:drupal-theme"]
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "cweagans/composer-patches": true,
+      "drupal/core-composer-scaffold": true
     }
   }
 }

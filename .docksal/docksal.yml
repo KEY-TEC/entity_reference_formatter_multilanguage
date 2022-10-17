@@ -7,22 +7,35 @@ services:
   web:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
-      service: web
+      service: apache
     depends_on:
       - cli
+
   # DB
   db:
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
-      service: db
+      service: mysql
 
   # CLI
   cli:
-    ports:
-     - "2228:22"
     extends:
       file: ${HOME}/.docksal/stacks/services.yml
       service: cli
     environment:
-      - PATH=/var/www/vendor/bin:$PATH
-      - PHP_IDE_CONFIG=serverName=${VIRTUAL_HOST}
+      - COMPOSER_MEMORY_LIMIT=-1
+  # Redis
+  redis:
+    image: redis:3.2.9
+
+  # Solr
+  solr:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: solr
+
+  # MailHog
+  mail:
+    extends:
+      file: ${HOME}/.docksal/stacks/services.yml
+      service: mail
