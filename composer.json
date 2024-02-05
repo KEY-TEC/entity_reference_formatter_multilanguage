@@ -13,12 +13,11 @@
   ],
   "require-dev": {
     "cweagans/composer-patches": "~1.0",
-    "drupal/core-composer-scaffold": "^9",
+    "drupal/core-composer-scaffold": "^10",
     "drush/drush": "*",
     "peridot-php/leo": "^1.6",
     "openeuropa/task-runner": "^0.4",
-    "drupal/core": "^9",
-    "drupal/core-recommended": "^9"
+    "drupal/core-recommended": "^10"
   },
   "repositories": [
     {

@@ -1,6 +1,6 @@
 name: Entity Reference Formatter Multilanguage
 description: Renders only published entities in the current language.
 type: module
-core_version_requirement: ^8 || ^9
+core_version_requirement: ^9 || ^10
 dependecies:
   - entity_reference
